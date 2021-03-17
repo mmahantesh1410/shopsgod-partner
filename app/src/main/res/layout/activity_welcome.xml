@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#d1b19c"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:layout_marginBottom="-10dp"
+        app:srcCompat="@drawable/welcome"
+        android:contentDescription="TODO" />
+
+
+    <TextView
+        android:id="@+id/loadper"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:text="100%"/>
+    <ProgressBar
+        android:id="@+id/horprogress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:progress="1"
+        android:progressDrawable="@drawable/progressbar_rounded_corner"/>
+
+
+
+</LinearLayout>
